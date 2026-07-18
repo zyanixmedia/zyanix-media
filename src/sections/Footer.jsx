@@ -11,10 +11,10 @@ const Footer = () => {
       </div>
 
       <div className="footer-links">
-        <a href="#">Instagram</a>
+        <a href="https://www.instagram.com/zyanixmedia/">Instagram</a>
         <a href="#">LinkedIn</a>
-        <a href="#">WhatsApp</a>
-        <a href="mailto:hello@zyanix.com">Email</a>
+        <a href="#">Facebook</a>
+        <a href="#">zyanixmedia@gmail.com</a>
       </div>
 
       <div className="footer-bottom">
