@@ -7,7 +7,7 @@ const team = [
   {
     name: "ZYANIX",
     role: "Creative Digital Agency",
-    image: "/Zynanix logo SUB .png",
+    image: "/zyanix.png",
     description:
       "We build premium digital experiences through branding, websites, UI/UX, motion graphics and content creation.",
   },
