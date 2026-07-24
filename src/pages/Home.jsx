@@ -1,6 +1,6 @@
 import Navbar from "../components/Navbar";
 import Hero from "../sections/Hero";
-import Team from "../sections/Team";
+import Gigs from "../sections/Gigs";
 import About from "../sections/About";
 import Services from "../sections/Services";
 import Contact from "../sections/contact";
@@ -12,7 +12,7 @@ const Home = () => {
       <Navbar />
       <Hero />
       <About />
-       <Team />
+      <Gigs />
       <Services />
       <Contact />
       <Footer />

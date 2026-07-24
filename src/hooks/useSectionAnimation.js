@@ -1,10 +1,12 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const useSectionAnimation = (ref) => {
+const useSectionAnimation = () => {
+  const ref = useRef(null);
+
   useEffect(() => {
     if (!ref.current) return;
 
@@ -19,14 +21,15 @@ const useSectionAnimation = (ref) => {
         y: 0,
         duration: 1,
         ease: "power3.out",
-
         scrollTrigger: {
           trigger: ref.current,
           start: "top 80%",
         },
       }
     );
-  }, [ref]);
+  }, []);
+
+  return ref;
 };
 
 export default useSectionAnimation;
