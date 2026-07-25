@@ -70,102 +70,101 @@ const team = [
 ];
 
 const About = () => {
-  const aboutRef = useRef(null);
+  const aboutRef = useSectionAnimation();
 
   const imageRef = useRef(null);
-  const titleRef = useRef(null);
-  const roleRef = useRef(null);
-  const descRef = useRef(null);
-
-  useSectionAnimation(aboutRef);
+const contentRef = useRef(null);
 
   const [current, setCurrent] = useState(0);
 
-  const changeMember = (newIndex, direction) => {
-    const tl = gsap.timeline();
+ const changeMember = (newIndex, direction) => {
+  const tl = gsap.timeline();
 
-    tl.to(
-      [
-        imageRef.current,
-        titleRef.current,
-        roleRef.current,
-        descRef.current,
-      ],
-      {
-        opacity: 0,
-        x: direction === "next" ? -40 : 40,
-        duration: 0.25,
-        ease: "power2.in",
-      }
-    );
+  tl.to(imageRef.current, {
+    opacity: 0,
+    scale: 0.95,
+    duration: 0.25,
+    ease: "power2.in",
+  });
 
-    tl.call(() => {
-      setCurrent(newIndex);
-    });
+  tl.to(
+    contentRef.current,
+    {
+      opacity: 0,
+      x: direction === "next" ? -30 : 30,
+      duration: 0.25,
+      ease: "power2.in",
+    },
+    "<"
+  );
 
-    tl.fromTo(
-      [
-        imageRef.current,
-        titleRef.current,
-        roleRef.current,
-        descRef.current,
-      ],
-      {
-        opacity: 0,
-        x: direction === "next" ? 40 : -40,
-      },
-      {
-        opacity: 1,
-        x: 0,
-        duration: 0.45,
-        stagger: 0.05,
-        ease: "power3.out",
-      }
-    );
-  };
+  tl.call(() => {
+    setCurrent(newIndex);
+  });
+
+  tl.fromTo(
+    imageRef.current,
+    {
+      opacity: 0,
+      scale: 1.05,
+    },
+    {
+      opacity: 1,
+      scale: 1,
+      duration: 0.45,
+      ease: "power3.out",
+    }
+  );
+
+  tl.fromTo(
+    contentRef.current,
+    {
+      opacity: 0,
+      x: direction === "next" ? 30 : -30,
+    },
+    {
+      opacity: 1,
+      x: 0,
+      duration: 0.45,
+      ease: "power3.out",
+    },
+    "<"
+  );
+};
 
   const previousMember = () => {
-    const newIndex =
-      current === 0 ? team.length - 1 : current - 1;
-
-    changeMember(newIndex, "prev");
+    changeMember(
+      current === 0 ? team.length - 1 : current - 1,
+      "prev"
+    );
   };
 
   const nextMember = () => {
-    const newIndex =
-      current === team.length - 1 ? 0 : current + 1;
-
-    changeMember(newIndex, "next");
+    changeMember(
+      current === team.length - 1 ? 0 : current + 1,
+      "next"
+    );
   };
 
   return (
-    <section
-      id="about"
-      className="about"
-      ref={aboutRef}
-    >
+    <section id="about" className="about" ref={aboutRef}>
       <div className="about-left">
 
-        <button
-          className="arrow"
-          onClick={previousMember}
-        >
+        <button className="arrow" onClick={previousMember}>
           ❮
         </button>
 
         <div className="about-image-card">
           <img
-            ref={imageRef}
-            src={team[current].image}
-            alt={team[current].name}
-            className="about-image"
-          />
+  ref={imageRef}
+  src={team[current].image}
+  alt={team[current].name}
+  className="about-image"
+  draggable="false"
+/>
         </div>
 
-        <button
-          className="arrow"
-          onClick={nextMember}
-        >
+        <button className="arrow" onClick={nextMember}>
           ❯
         </button>
 
@@ -173,42 +172,46 @@ const About = () => {
 
       <div className="about-right">
 
-        <span className="section-tag">
-          ABOUT ZYANIX
-        </span>
+  <div ref={contentRef}>
 
-        <h2 ref={titleRef}>
-          {team[current].name}
-        </h2>
+    <span className="section-tag">
+      ABOUT ZYANIX
+    </span>
 
-        <h4 ref={roleRef}>
-          {team[current].role}
-        </h4>
+    <h2>
+      {team[current].name}
+    </h2>
 
-        <p ref={descRef}>
-          {team[current].description}
-        </p>
+    <h4>
+      {team[current].role}
+    </h4>
 
-        <div className="about-stats">
+    <p>
+      {team[current].description}
+    </p>
 
-          <div>
-            <Counter end={35} suffix="+" />
-            <span>Projects</span>
-          </div>
+  </div>
 
-          <div>
-            <Counter end={15} suffix="+" />
-            <span>Clients</span>
-          </div>
+  <div className="about-stats">
 
-          <div>
-            <Counter end={100} suffix="%" />
-            <span>Passion</span>
-          </div>
+    <div>
+      <Counter end={35} suffix="+" />
+      <span>Projects</span>
+    </div>
 
-        </div>
+    <div>
+      <Counter end={15} suffix="+" />
+      <span>Clients</span>
+    </div>
 
-      </div>
+    <div>
+      <Counter end={100} suffix="%" />
+      <span>Passion</span>
+    </div>
+
+  </div>
+
+</div>
     </section>
   );
 };

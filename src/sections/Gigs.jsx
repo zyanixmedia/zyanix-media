@@ -6,10 +6,8 @@ const plans = [
     badge: "",
     icon: "🚀",
     features: [
-      "1 Social Media Post",
-      "Basic Graphic Design",
-      "Fast Delivery",
-      "Email Support",
+      "4 Social Media Posts",
+      "4 Social Media Reels ",
     ],
   },
   {
@@ -18,8 +16,8 @@ const plans = [
     icon: "🔥",
     features: [
       "4 Social Media Posts",
-      "2 Professional Reels",
-      "Brand Strategy",
+      "6 Professional Reels",
+      "Written Scripts",
       "Priority Support",
     ],
   },
@@ -28,9 +26,10 @@ const plans = [
     badge: "",
     icon: "💼",
     features: [
+      "6 Social Media Posts",
+      "10 Professional Reels",
+      "Written Scripts",
       "Monthly Content",
-      "Professional Video Editing",
-      "Poster Designs",
       "Content Planning",
     ],
   },
@@ -39,11 +38,12 @@ const plans = [
     badge: "",
     icon: "👑",
     features: [
-      "Complete Brand Management",
-      "Website Development",
-      "UI/UX Design",
-      "Motion Graphics",
+      "8 Social Media Posts",
+      "12 Professional Reels",
+      "Written Scripts",
+      "Content Planning",
       "Dedicated Team",
+      "Complete Brand Management",
     ],
   },
 ];
@@ -64,6 +64,10 @@ export default function Gigs() {
           Every business is different. We create customized digital solutions
           that fit your goals. Contact us to receive a personalized quotation.
         </p>
+        <div className="starting-prices">
+
+ 
+</div>
       </div>
 
       <div className="gigs-grid">
