@@ -93,12 +93,20 @@ export default function Gigs() {
               ))}
             </ul>
 
-            <a
-              href="#contact"
-              className="gig-btn"
-            >
-              Contact For Quote
-            </a>
+          <a
+  href={`https://wa.me/917538850128?text=${encodeURIComponent(
+`Hi ZYANIX 👋
+
+I'm interested in your (Replace with your plan) Plan.
+Please send me the pricing and more details.
+Thank you!❤️`
+  )}`}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="gig-btn"
+>
+  Contact For Quote
+</a>
           </div>
         ))}
       </div>

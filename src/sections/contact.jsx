@@ -122,18 +122,7 @@ const Contact = () => {
             <option>Social Media Management</option>
           </select>
 
-          <select
-            name="budget"
-            value={formData.budget}
-            onChange={handleChange}
-            required
-          >
-            <option value="">Estimated Budget</option>
-            <option>Under ₹6,000</option>
-            <option>₹6,000 - ₹10,000</option>
-            <option>₹10,000 - ₹20,000</option>
-            <option>₹20,000+</option>
-          </select>
+          
 
           <textarea
             name="message"

@@ -1066,29 +1066,18 @@ gap:35px;
     transition:.45s;
 }
 .gig-card::before{
-
-content:"";
-
-position:absolute;
-
-inset:0;
-
-background:
-linear-gradient(
-135deg,
-rgba(255,138,31,.15),
-transparent
-);
-
-opacity:0;
-
-transition:.4s;
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(
+        135deg,
+        rgba(255,138,31,.15),
+        transparent
+    );
+    opacity:0;
+    transition:.4s;
+    pointer-events:none;   /* 👈 Add this */
 }
-
-.gig-card:hover::before{
-opacity:1;
-}
-
 .gig-card:hover{
 
 transform:
@@ -1101,6 +1090,10 @@ box-shadow:
 
 }
 
+.gig-card > *{
+    position:relative;
+    z-index:1;
+}
 .gig-badge{
 
 position:absolute;
