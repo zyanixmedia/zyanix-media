@@ -13,11 +13,16 @@ Being a student who is passionately pursuing a career in design, his dedication 
 I wish Shahul all the very best for a successful career and a fulfilling life ahead.`,
   },
   {
-    name: "Priya Menon",
-    company: "Marketing Manager, Bloom Studio",
-    review:
-      "Their social media creatives and video editing significantly improved our engagement. Highly recommended for businesses looking for premium quality.",
-  },
+  name: "Ahamed Junaith",
+  company: "Sconish Club",
+  review: `Working with ZYANIX has been a game-changer for our brand.
+
+Every reel is  crisp, creative, and scroll-stopping. You don't just edit videos—you create content that grabs attention.
+
+You perfectly understand the vibe every single time.Fast delivery, clean edits, and killer transitions. 
+
+My ads and reels have never looked this good! Highly recommended!`
+}
 ];
 
 export default function Testimonials() {
