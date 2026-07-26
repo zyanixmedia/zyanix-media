@@ -6,25 +6,24 @@ const Services = () => {
 
   useSectionAnimation(servicesRef);
 
-  const services = [
-    {
-      title: "Web Design",
-      desc: "Modern, responsive and conversion-focused websites.",
-    },
-    {
-      title: "Designing",
-      desc: "Attractive, colourful and futuristic designs.",
-    },
-    {
-      title: "Branding",
-      desc: "Brand identity, strategy and visual systems.",
-    },
-    {
-      title: "Content Creation",
-      desc: "Creative visuals, reels shoot and storytelling.",
-    },
-  ];
-
+ const services = [
+  {
+    title: "Graphic Designing",
+    desc: "Professional designs for social media, branding, marketing, and promotional campaigns.",
+  },
+  {
+    title: "Video Editing",
+    desc: "Cinematic video editing with motion graphics, color grading, and engaging storytelling.",
+  },
+  {
+    title: "Personal Branding",
+    desc: "Complete brand identity solutions including logos, visual systems, and brand strategy.",
+  },
+  {
+    title: "Content Creation",
+    desc: "Creative reels, product shoots, promotional content, and digital storytelling for modern brands.",
+  },
+];
   return (
     <section
       id="services"

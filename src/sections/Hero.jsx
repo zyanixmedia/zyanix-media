@@ -34,9 +34,18 @@ const Hero = () => {
           Branding • Websites • Motion • Content
         </p>
 
-        <button ref={buttonRef} className="hero-btn">
-          Start Your Project
-        </button>
+        <button
+  ref={buttonRef}
+  className="hero-btn"
+  onClick={() => {
+    document.getElementById("contact")?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  }}
+>
+  Start Your Project
+</button>
       </div>
       
 
