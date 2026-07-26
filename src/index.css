@@ -1,7 +1,15 @@
 /* =========================
    RESET
 ========================= */
+html,
+body{
+    overflow-x:hidden;
+    width:100%;
+}
 
+*{
+    box-sizing:border-box;
+}
 * {
   margin: 0;
   padding: 0;
@@ -250,6 +258,7 @@ body,
   color: #ff8a1f;
   font-size: 14px;
 }
+
 /* ======================================
    MOBILE RESPONSIVE
 ====================================== */
@@ -1276,6 +1285,49 @@ body,
   rotateY(-15deg)
   scale(.85);
 }
+@media (max-width:768px){
+
+.reel-slider{
+    width:100%;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+}
+
+.side-preview{
+    display:none;
+}
+
+.reel-card{
+    width:240px;
+    height:460px;
+    border-radius:28px;
+}
+
+.slider-btn{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    z-index:10;
+
+    width:42px;
+    height:42px;
+    font-size:18px;
+}
+
+.slider-btn.left{
+    left:8px;
+    margin:0;
+}
+
+.slider-btn.right{
+    right:8px;
+    margin:0;
+}
+
+}
 .team-card {
   position: relative;
 
@@ -1905,7 +1957,13 @@ color:#cfcfcf;
 ====================================== */
 
 @media (max-width:768px){
-
+.navbar{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px;
+}
   .hero{
       padding:120px 25px 70px;
       text-align:center;
