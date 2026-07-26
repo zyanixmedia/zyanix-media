@@ -2,7 +2,7 @@ import { useRef, useState } from "react";
 import gsap from "gsap";
 import Counter from "../components/Counter";
 import useSectionAnimation from "../hooks/useSectionAnimation";
-
+import { useEffect } from "react";
 const team = [
   {
     name: "ZYANIX",
@@ -145,7 +145,12 @@ const contentRef = useRef(null);
       "next"
     );
   };
-
+useEffect(() => {
+  team.forEach((member) => {
+    const img = new Image();
+    img.src = member.image;
+  });
+}, []);
   return (
     <section id="about" className="about" ref={aboutRef}>
       <div className="about-left">
