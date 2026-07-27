@@ -42,7 +42,9 @@ const Navbar = () => {
         <li>
           <a href="#contact" onClick={closeMenu}>Contact</a>
         </li>
-
+<li>
+          <a href="#team" onClick={closeMenu}>Team</a>
+        </li>
         <li className="mobile-btn">
           <a href="#contact" onClick={closeMenu}>
             Start Your Project
