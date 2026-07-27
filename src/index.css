@@ -424,76 +424,7 @@ body,
   color: #ff8a1f;
   letter-spacing: 2px;
 }
-.member-selector{
-    display:flex;
-    flex-direction:column;
-    gap:22px;
 
-    justify-content:center;
-    align-items:center;
-
-    margin:0 45px;
-}
-
-.member-dot{
-    width:18px;
-    height:18px;
-
-    border-radius:50%;
-
-    border:2px solid #888;
-    background:transparent;
-
-    cursor:pointer;
-
-    transition:.35s;
-}
-
-.member-dot:hover{
-    transform:scale(1.15);
-    border-color:#ff8a1f;
-}
-
-.member-dot.active{
-    background:#ff8a1f;
-    border-color:#ff8a1f;
-
-    box-shadow:0 0 18px rgba(255,138,31,.6);
-}
-.about-left{
-    display:flex;
-    align-items:center;
-    gap:20px;
-}
-
-.arrow{
-    width:55px;
-    height:55px;
-
-    border:none;
-    border-radius:50%;
-
-    background:#151515;
-    color:white;
-
-    font-size:24px;
-    cursor:pointer;
-
-    transition:.35s ease;
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-}
-
-.arrow:hover{
-    background:#ff8a1f;
-    color:#fff;
-
-    transform:scale(1.08);
-
-    box-shadow:0 0 25px rgba(255,138,31,.5);
-}
 /* ======================================
    MOBILE RESPONSIVE
 ====================================== */

@@ -155,9 +155,7 @@ useEffect(() => {
     <section id="about" className="about" ref={aboutRef}>
       <div className="about-left">
 
-        <button className="arrow" onClick={previousMember}>
-          ❮
-        </button>
+        
 
         <div className="about-image-card">
           <img
@@ -169,9 +167,7 @@ useEffect(() => {
 />
         </div>
 
-        <button className="arrow" onClick={nextMember}>
-          ❯
-        </button>
+       
 
       </div>
 
