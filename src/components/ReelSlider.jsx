@@ -7,6 +7,10 @@ const slides = [
   },
   {
     type: "video",
+    src: "/r4.mp4",
+  },
+  {
+    type: "video",
     src: "/r1.mp4",
   },
    {
