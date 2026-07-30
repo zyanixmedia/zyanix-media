@@ -8,37 +8,37 @@ const members = [
   },
   {
     name: "Ram Prasath",
-    role: "Video Editor",
+    role: "Data Handling",
     image: "/ram.png",
   },
   {
     name: "Yapase",
-    role: "Frontend Developer",
+    role: "Camera Operator",
     image: "/yaps.png",
   },
   {
     name: "Mohan Priyan",
-    role: "Graphic Designer",
+    role: "(J) graphic designer,editor",
     image: "/mohan.png",
   },
   {
     name: "Akshay",
-    role: "Graphic Designer",
+    role: "Social Media Handling Executive",
     image: "/akshai.png",
   },
   {
     name: "Ravi Varman",
-    role: "Graphic Designer",
+    role: "content writting & marketing lead ",
     image: "/ravi.png",
   },
   {
     name: "Prateesh",
-    role: "Graphic Designer",
+    role: "(J) graphic designer,editor",
     image: "/prateesh.png",
   },
   {
     name: "Harish",
-    role: "Graphic Designer",
+    role: "Client Acquisition Executive",
     image: "/harish.png",
   },
 ];

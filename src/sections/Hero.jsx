@@ -20,7 +20,7 @@ const Hero = () => {
       
       <div className="hero-left">
         <div className="hero-badge">
-  🚀 Digital Agency & Creative Studio
+  🚀 Digital Media Company
 </div>
         <h1 ref={titleRef} className="hero-title">
           We Build
