@@ -5,8 +5,7 @@ const Footer = () => {
         <h2>ZYANIX</h2>
 
         <p>
-          Building premium digital experiences
-          for brands that want to stand out.
+          We Make Raw Into Remarkable.
         </p>
       </div>
 

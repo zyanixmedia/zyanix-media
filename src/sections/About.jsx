@@ -9,7 +9,7 @@ const team = [
     role: "Creative Digital Agency",
     image: "/zyanix.png",
     description:
-      "We build premium digital experiences through branding, websites, UI/UX, motion graphics and content creation.",
+      "We build premium digital experiences through Branding,Web,Video,Content,Marketing and content creation.",
   },
   {
     name: "Shahul Hameed Irshath",

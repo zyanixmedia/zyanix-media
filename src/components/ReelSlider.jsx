@@ -1,21 +1,48 @@
 import { useState } from "react";
 
 const slides = [
+ 
   {
     type: "video",
     src: "/r.mp4",
   },
+  
+     {
+    type: "video",
+    src: "/r2.mp4",
+  },
+     {
+    type: "video",
+    src: "/r5.mp4",
+  },
+
+   {
+    type: "image",
+    src: "/r1.jpg",
+  },
+
   {
     type: "video",
     src: "/r4.mp4",
   },
-  {
+    {
     type: "video",
     src: "/r1.mp4",
   },
+
+  {
+    type: "video",
+    src: "/r8.mp4",
+  },
+
+  {
+    type: "video",
+    src: "/r6.mp4",
+  },
+ 
    {
     type: "video",
-    src: "/r3.mp4",
+    src: "/r7.mp4",
   },
 ];
 

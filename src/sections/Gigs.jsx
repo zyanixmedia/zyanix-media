@@ -8,6 +8,7 @@ const plans = [
     features: [
       "4 Social Media Posts",
       "4 Social Media Reels ",
+      "Video Production",
     ],
   },
   {
@@ -18,7 +19,7 @@ const plans = [
       "4 Social Media Posts",
       "6 Professional Reels",
       "Written Scripts",
-      "Priority Support",
+      "Video Production",
     ],
   },
   {
@@ -29,8 +30,7 @@ const plans = [
       "6 Social Media Posts",
       "10 Professional Reels",
       "Written Scripts",
-      "Monthly Content",
-      "Content Planning",
+      "Video Production",
     ],
   },
   {
@@ -41,7 +41,7 @@ const plans = [
       "8 Social Media Posts",
       "12 Professional Reels",
       "Written Scripts",
-      "Content Planning",
+      "Video Production",
       "Dedicated Team",
       "Complete Brand Management",
     ],

@@ -114,12 +114,12 @@ const Contact = () => {
             required
           >
             <option value="">Select Service</option>
-            <option>Video Editing</option>
-            <option>Graphic Design</option>
-            <option>Branding</option>
+            <option>Branding & Graphic Design</option>
+            <option>Video Editing & Production</option>
+            <option>Website Design & Development</option>
             <option>Personal content shooting</option>
-            <option>Running adds</option>
             <option>Social Media Management</option>
+            <option>Digital Marketing</option>
           </select>
 
           

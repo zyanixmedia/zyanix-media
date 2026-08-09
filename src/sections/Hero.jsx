@@ -31,7 +31,7 @@ const Hero = () => {
         </h1>
 
         <p ref={textRef} className="hero-text">
-          Branding • Websites • Motion • Content
+          Branding • Web • Video • Content • Marketing
         </p>
 
         <button

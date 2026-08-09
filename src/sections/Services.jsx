@@ -8,20 +8,20 @@ const Services = () => {
 
  const services = [
   {
-    title: "Graphic Designing",
-    desc: "Professional designs for social media, branding, marketing, and promotional campaigns.",
+    title: "Branding & Graphic Design",
+    desc: "Building memorable brand identities through logos, visual systems, social creatives, and marketing designs.",
   },
   {
-    title: "Video Editing",
-    desc: "Cinematic video editing with motion graphics, color grading, and engaging storytelling.",
+    title: "Video Editing & Production",
+    desc: "Creating engaging reels, promotional videos, motion graphics, and cinematic visual content that tells your story.",
   },
   {
-    title: "Personal Branding",
-    desc: "Complete brand identity solutions including logos, visual systems, and brand strategy.",
+    title: "Social Media Management",
+    desc: "Managing your digital presence through strategy, content creation, publishing, engagement, and consistent brand communication.",
   },
   {
-    title: "Content Creation",
-    desc: "Creative reels, product shoots, promotional content, and digital storytelling for modern brands.",
+    title: "Digital Marketing",
+    desc: "Growing brands through targeted campaigns, creative advertising, audience building, and performance-driven strategies.",
   },
 ];
   return (
