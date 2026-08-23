@@ -4,7 +4,6 @@ const plans = [
   {
     title: "Starter",
     badge: "",
-    icon: "🚀",
     features: [
       "4 Social Media Posts",
       "4 Social Media Reels ",
@@ -14,7 +13,6 @@ const plans = [
   {
     title: "Growth",
     badge: "POPULAR",
-    icon: "🔥",
     features: [
       "4 Social Media Posts",
       "6 Professional Reels",
@@ -25,7 +23,6 @@ const plans = [
   {
     title: "Business",
     badge: "",
-    icon: "💼",
     features: [
       "6 Social Media Posts",
       "10 Professional Reels",
@@ -36,7 +33,6 @@ const plans = [
   {
     title: "Enterprise",
     badge: "",
-    icon: "👑",
     features: [
       "8 Social Media Posts",
       "12 Professional Reels",
@@ -57,12 +53,12 @@ export default function Gigs() {
         <span className="section-tag">OUR SOLUTIONS</span>
 
         <h2>
-          Creative <span>Service Plans</span>
+          Our <span>Service Plans</span>
         </h2>
 
         <p>
           Every business is different. We create customized digital solutions
-          that fit your goals. Contact us to receive a personalized quotation.
+          that fit your goals. Reach out to receive a personalized quotation.
         </p>
         <div className="starting-prices">
 

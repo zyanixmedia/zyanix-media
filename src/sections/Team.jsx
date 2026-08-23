@@ -53,7 +53,7 @@ export default function Team() {
         <span className="section-tag">OUR TEAM</span>
 
         <h2>
-          Meet The <span>Creative Minds</span>
+          Meet The <span>Young Minds</span>
         </h2>
 
         <p>

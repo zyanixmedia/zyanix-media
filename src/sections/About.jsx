@@ -6,8 +6,8 @@ import { useEffect } from "react";
 const team = [
   {
     name: "ZYANIX",
-    role: "Creative Digital Agency",
-    image: "/zyanix.png",
+    role: "Digital Marketing Agency",
+    image: "/1.png",
     description:
       "We build premium digital experiences through Branding,Web,Video,Content,Marketing and content creation.",
   },
