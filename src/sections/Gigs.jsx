@@ -93,8 +93,8 @@ export default function Gigs() {
   href={`https://wa.me/917538850128?text=${encodeURIComponent(
 `Hi ZYANIX 👋
 
-I'm interested in your (Replace with your plan) Plan.
-Please send me the pricing and more details.
+I'm interested in working with you.
+Please send me the pricing and more details in your (Replace with your plan) Plan.
 Thank you!❤️`
   )}`}
   target="_blank"
