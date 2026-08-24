@@ -18,7 +18,7 @@ const members = [
   },
   {
     name: "Mohan Priyan",
-    role: "(J) graphic designer,editor",
+    role: "Graphic designer, Editor",
     image: "/mohan.png",
   },
   {
@@ -27,13 +27,13 @@ const members = [
     image: "/akshai.png",
   },
   {
-    name: "Ravi Varman",
+    name: "Ravivarman",
     role: "content writting & marketing lead ",
     image: "/ravi.png",
   },
   {
-    name: "Prateesh",
-    role: "(J) graphic designer,editor",
+    name: "Prateesh Kumar",
+    role: "Graphic designer, Editor",
     image: "/prateesh.png",
   },
   {
