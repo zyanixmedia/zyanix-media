@@ -2040,147 +2040,143 @@ color:#cfcfcf;
 
 }
 /* ==========================
+   TEAM - DESKTOP
+========================== */
+
+.team-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.team-logo {
+    position: absolute;
+    width: 220px;
+    left: 50%;
+    top: 42%;
+    transform: translate(-50%, -50%);
+    opacity: 0.08;
+    z-index: 1;
+    pointer-events: none;
+    user-select: none;
+    transition: 0.45s ease;
+    filter: grayscale(100%);
+}
+
+.team-img {
+    position: absolute;
+    bottom: 35px;
+    width: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    transition: 0.45s ease;
+}
+
+.team-info {
+    position: absolute;
+    bottom: 25px;
+    width: 100%;
+    text-align: center;
+    z-index: 3;
+    padding: 0 20px;
+}
+
+.team-card:hover {
+    transform: translateY(-12px);
+    border-color: #ff8a1f;
+    box-shadow: 0 25px 70px rgba(255, 138, 31, 0.22);
+}
+
+.team-card:hover .team-img {
+    transform: translateX(-50%) scale(1.05);
+}
+
+.team-card:hover .team-logo {
+    opacity: 0.16;
+    transform:
+        translate(-50%, -50%)
+        scale(1.12)
+        rotate(-5deg);
+}
+
+
+/* ==========================
    TEAM - MOBILE
 ========================== */
 
-@media (max-width:768px){
+@media (max-width: 768px) {
 
-.team{
-    padding:80px 20px;
-}
+    .team {
+        padding: 80px 20px;
+    }
 
-.team-header{
-    text-align:center;
-    margin-bottom:50px;
-}
+    .team-header {
+        text-align: center;
+        margin-bottom: 50px;
+    }
 
-.team-header h2{
-    font-size:38px;
-    line-height:1.2;
-}
+    .team-header h2 {
+        font-size: 38px;
+        line-height: 1.2;
+    }
 
-.team-header p{
-    font-size:15px;
-    line-height:1.8;
-    max-width:100%;
-}
+    .team-header p {
+        font-size: 15px;
+        line-height: 1.8;
+        max-width: 100%;
+    }
 
-.team-grid{
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:18px;
-}
+    .team-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+    }
 
-.team-card{
-    height:270px;
-    border-radius:20px;
-}
+    .team-card {
+        height: 270px;
+        border-radius: 20px;
+    }
 
+    /* Mobile logo */
+    .team-logo {
+        width: 160px;
+        top: 40%;
+    }
 
-.team-img{
-    width:85%;
-    bottom:0x;
-}
+    /* Mobile person */
+    .team-img {
+        width: 100%;
+        bottom: 35px;
+    }
 
-.team-info{
-    padding:18px 10px;
-}
+    /* Mobile text */
+    .team-info {
+        padding: 0 10px;
+        bottom: 18px;
+    }
 
-.team-info h3{
-    font-size:18px;
-    line-height:1.2;
-}
+    .team-info h3 {
+        font-size: 18px;
+        line-height: 1.2;
+    }
 
-.team-info p{
-    font-size:12px;
-    line-height:1.4;
-}
+    .team-info p {
+        font-size: 12px;
+        line-height: 1.4;
+    }
 
-}
-.team-card{
+    /* Disable/soften hover effect on mobile */
+    .team-card:hover {
+        transform: none;
+        box-shadow: none;
+    }
 
-    position:relative;
+    .team-card:hover .team-img {
+        transform: translateX(-50%);
+    }
 
-    overflow:hidden;
-
-}
-.team-logo{
-
-    position:absolute;
-
-    width:220px;
-
-    left:50%;
-    top:42%;
-
-    transform:translate(-50%,-50%);
-
-    opacity:.08;
-
-    z-index:1;
-
-    pointer-events:none;
-
-    user-select:none;
-
-    transition:.45s ease;
-
-    filter:grayscale(100%);
-}
-.team-img{
-
-    position:absolute;
-
-    bottom:35px;
-
-    width:90%;
-
-    left:50%;
-
-    transform:translateX(-50%);
-
-    z-index:2;
-
-    transition:.45s ease;
-}
-.team-info{
-
-    position:absolute;
-
-    bottom:25px;
-
-    width:100%;
-
-    text-align:center;
-
-    z-index:3;
-
-    padding:0 20px;
-}
-.team-card:hover{
-
-    transform:translateY(-12px);
-
-    border-color:#ff8a1f;
-
-    box-shadow:
-    0 25px 70px rgba(255,138,31,.22);
-
-}
-.team-card:hover .team-img{
-
-    transform:
-    translateX(-50%)
-    scale(1.05);
-
-}
-.team-card:hover .team-logo{
-
-    opacity:.16;
-
-    transform:
-    translate(-50%,-50%)
-    scale(1.12)
-    rotate(-5deg);
-
+    .team-card:hover .team-logo {
+        transform: translate(-50%, -50%);
+        opacity: 0.08;
+    }
 }
