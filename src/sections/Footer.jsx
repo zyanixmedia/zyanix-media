@@ -11,7 +11,7 @@ const Footer = () => {
 
       <div className="footer-links">
         <a href="https://www.instagram.com/zyanixmedia/">Instagram</a>
-        <a href="https://www.facebook.com/profile.php?id=61592033666946">Facebook</a>
+        <a href="https://www.facebook.com/share/1KmH5spFfr/">Facebook</a>
         <a href="#">zyanixmedia@gmail.com</a>
       </div>
 

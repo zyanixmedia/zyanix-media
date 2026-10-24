@@ -126,6 +126,7 @@ const Contact = () => {
 
           <textarea
             name="message"
+            font="google sas"
             placeholder="Tell us about your project..."
             rows="6"
             value={formData.message}

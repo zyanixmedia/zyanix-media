@@ -4,7 +4,7 @@ const slides = [
  
   {
     type: "video",
-    src: "/r.mp4",
+    src: "/r5.mp4",
   },
   
      {
@@ -13,12 +13,12 @@ const slides = [
   },
      {
     type: "video",
-    src: "/r5.mp4",
+    src: "/r.mp4",
   },
 
    {
-    type: "image",
-    src: "/r1.jpg",
+    type: "video",
+    src: "/r10.mp4",
   },
 
   {
@@ -26,8 +26,8 @@ const slides = [
     src: "/r4.mp4",
   },
     {
-    type: "video",
-    src: "/r1.mp4",
+    type: "image",
+    src: "/r1.jpg",
   },
 
   {
